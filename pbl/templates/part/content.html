@@ -1,0 +1,52 @@
+{% block content %}
+    <div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<table class="table table-bordered" style="margin-top:50px;">
+						<tr>
+							<td><button class="btn" onclick="newclass()"><h4>+新教室</h4></button></td>
+							<td ><h4>進入新教室</h4></td>
+							<td ><h4>卡片資料庫</h4></td>
+							<td ><h4>+成果櫥窗</h4></td>
+						</tr>
+					</table>
+					<table class="table table-bordered" style="margin-top:30px;">
+                                                <tr class="row">
+                                                        <td class="col-md-4">
+								<div style="position:relative;">
+                                    {% load static %}
+								<img src="{% static "images/webimages/title.jpg" %}" width="300px" height="200px">
+								<div style="position:absolute; left:60px; top:100px; width:180px; height:60px; background-color:#FFF;opacity: 0.7;">
+									<h4 class="text-center">未來圖書館</h4>
+								</div>
+								</div>
+							</td>
+                                                        <td class="col-md-4">
+								<div style="position:relative;">
+                                                {% load static %}
+                                				<img src="{% static "images/webimages/water_bg.jpg" %}" width="300px" height="200px">
+                                				<div style="position:absolute; left:60px; top:100px; width:180px; height:60px; background-color:#FFF;opacity: 0.7;">
+
+									<h4 class="text-center">未來社區</h4>
+
+                               				 </div>
+							</div>
+						       </td>
+							<td class="col-md-4">
+								<div style="position:relative;">
+                                                                {% load static %}
+                                				                <img src="{% static "images/webimages/title.jpg" %}" width="300px" height="200px">
+                                                                <div style="position:absolute; left:60px; top:100px; width:180px; height:60px; background-color:#FFF;opacity: 0.7;">
+
+                                                                        <h4 class="text-center">明日銀髮村</h4>
+
+                                                         </div>
+							</div>
+							</td>
+                                                </tr>
+
+                                        </table>
+                                </div>
+			</div>
+		</div>
+{% endblock %}
